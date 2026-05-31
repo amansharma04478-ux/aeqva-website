@@ -193,12 +193,11 @@ new Date().getFullYear();
 
 }
 const heroImages = [
-    "images/hero-banner.jpg",
-    "images/hero-banner2.jpg",
-    "images/hero-banner3.jpg",
-    "images/hero-banner4.jpg"
+ "hero-banner.jpg",
+ "hero-banner2.jpg",
+ "hero-banner3.jpg",
+ "hero-banner4.jpg"
 ];
-
 let sliderIndex = 0;
 
 setInterval(() => {
