@@ -1,0 +1,437 @@
+/* ==========================
+   AEQVA PREMIUM WATER CSS
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f9ff;
+color:#222;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:#003b80;
+color:white;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo{
+height:60px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#9fd0ff;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+    overflow:hidden;
+    position:relative;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* FEATURES */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:60px;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.feature-box:hover{
+transform:translateY(-8px);
+}
+
+.feature-box i{
+font-size:40px;
+color:#007bff;
+margin-bottom:15px;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:80px 40px;
+}
+
+.products h2{
+text-align:center;
+font-size:40px;
+color:#003b80;
+margin-bottom:30px;
+}
+
+.category{
+margin:40px 0 20px;
+font-size:28px;
+color:#004ea8;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+max-width:180px;
+height:220px;
+object-fit:contain;
+margin:auto;
+display:block;
+}
+
+.card h4{
+margin-top:15px;
+font-size:22px;
+}
+
+.card p{
+margin:10px 0;
+}
+
+.card h3{
+color:#007bff;
+margin-bottom:15px;
+}
+
+.card button{
+background:#007bff;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:50px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.card button:hover{
+background:#005dc2;
+}
+
+/* GALLERY */
+
+.gallery{
+padding:80px 40px;
+background:white;
+}
+
+.gallery h2{
+text-align:center;
+margin-bottom:30px;
+font-size:40px;
+color:#003b80;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+transition:.3s;
+cursor:pointer;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.03);
+}
+
+/* ABOUT */
+
+.about{
+padding:80px 40px;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+color:#003b80;
+}
+
+.about p{
+max-width:800px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 40px;
+background:#003b80;
+color:white;
+text-align:center;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:30px;
+}
+
+.contact-box{
+background:rgba(255,255,255,.1);
+padding:30px;
+border-radius:20px;
+max-width:700px;
+margin:auto;
+}
+
+.contact-box h3{
+margin-bottom:15px;
+}
+
+.whatsapp-btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+}
+
+.whatsapp-btn:hover{
+background:#18b451;
+}
+
+/* FOOTER */
+
+footer{
+background:#001f44;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.footer-logo{
+height:70px;
+margin-bottom:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+padding:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content h3{
+font-size:22px;
+}
+
+.products,
+.gallery,
+.about,
+.contact{
+padding:50px 20px;
+}
+
+}
+.slider img,
+.gallery-grid img
+    .slider img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:15px;
+}
+/* HERO ANIMATION */
+.hero-content{
+animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* INSTAGRAM BUTTON */
+.instagram-btn{
+display:inline-block;
+margin-top:15px;
+padding:15px 30px;
+background:#E1306C;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+}
+.hero-content{
+animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+/* PRODUCT CARD ANIMATION */
+
+.card{
+    transition: all 0.4s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* BUTTON ANIMATION */
+
+.card button{
+    transition: all 0.3s ease;
+}
+
+.card button:hover{
+    transform: scale(1.1);
+}
+
+/* GALLERY IMAGE ANIMATION */
+
+.gallery-grid img{
+    transition: all 0.4s ease;
+}
+
+.gallery-grid img:hover{
+    transform: scale(1.08);
+}
+
+/* HERO FADE ANIMATION */
+
+.hero{
+    animation: heroZoom 8s infinite alternate;
+}
+
+@keyframes heroZoom{
+    from{
+        background-size:100%;
+    }
+    to{
+        background-size:110%;
+    }
+}
+
+/* SLIDER ANIMATION */
+
+.slider img{
+    transition: all 0.5s ease;
+}
+
+.slider img:hover{
+    transform: scale(1.05);
+}
+
+/* PAGE LOAD ANIMATION */
+
+.products,
+.gallery,
+.about,
+.contact{
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
